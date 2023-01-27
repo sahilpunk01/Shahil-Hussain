@@ -1,0 +1,38 @@
+<script>
+    jQuery(function($){
+        $('.et_pb_post_slider .post-meta').html(function (_,txt) {
+            return txt.slice(0, -40);
+        });
+    });
+</script>
+<style>
+@media screen and (min-width: 1160px) {
+#new_blog_recent .rt-holder {
+    flex-direction: row-reverse!important;
+}
+  #new_blog_recent .rt-detail {
+    width: 1400px;
+    margin-right: 5%!important;
+}
+  #new_blog_recent .rt-detail a{font-size:24px;display:inline;
+  }
+  #new_blog_recent .post-meta-user{
+top: -5px!important;
+position: absolute!important;
+}
+#new_blog_recent h3.entry-title{
+top: -26px!important;
+position: relative;
+}
+  }
+  .blogs-col1-r1-code .read-more a::after{
+    display:none;
+  }
+  .blogs-col1-r1-code .read-more a::before{
+    display:none;
+  }
+  .blogs-col1-r1-code .read-more a{
+    border:2px solid #000;
+  }
+  
+</style>
